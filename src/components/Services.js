@@ -53,14 +53,17 @@ const Services = () => {
           <div
             key={index}
             className="services-card"
-            onClick={() => handleCardClick(service)}
           >
             <img src={service.image} 
             alt={service.title} 
             className="service-img" 
             />
             <h3>{service.title}</h3>
-             <button className="buy-button" onClick={() => handleCardClick(service)}>View</button>
+             <button 
+                className="buy-button"
+                onClick={() => handleCardClick(service)}>
+                View
+              </button>
           </div>
         ))}
       </div>

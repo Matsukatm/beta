@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../styles.css';
 
 const OrderModal = ({ selectedItem, closeModal }) => {
   const [quantity, setQuantity] = useState('');
